@@ -25,10 +25,10 @@ def fourthChallenge(drinks, buys):
         for buy in buys:
             if buy == key:
                 output1 += drinks[key]
-                output2.append(buy)
+                output2.append(key)
 
     return(print(output1), '\n', print(" ".join(output2)))
 
 
-fourthChallenge(input("Ingrese los productos con su valor: "),
-                input("Ingresa tu compra: "))
+fourthChallenge(input(),
+                input())
