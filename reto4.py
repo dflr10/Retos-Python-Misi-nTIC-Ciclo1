@@ -21,11 +21,11 @@ def fourthChallenge(drinks, buys):
     drinks = json.loads(drinks)
     buys = buys.split()
 
-    for key in drinks.keys():
-        for buy in buys:
+    for buy in buys:
+        for key in drinks.keys():
             if buy == key:
                 output1 += drinks[key]
-                output2.append(key)
+                output2.append(buy)
 
     return(print(output1), '\n', print(" ".join(output2)))
 
