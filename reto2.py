@@ -23,14 +23,8 @@ def secondChallenge(myLetters, friendLetters, peopleFistLetters):
     for letter in peopleFistLetters:
         if letter in myLetters:
             myPoints += 1
-        else:
-            myPoints += 0
-
         if letter in friendLetters:
             friendPoints += 1
-        else:
-            friendPoints += 0
-
         if myPoints > friendPoints:
             output += "1"
         elif friendPoints > myPoints:
