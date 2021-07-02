@@ -12,6 +12,9 @@ def thirdChallenge(employees):
     times = 1
     output1 = []
     output2 = []
+    if len(employees) == 1:
+        output1.append(employees[0])
+        output2.append(times)
     for i in range(len(employees)-1):
         if employees[i] == employees[i+1]:
             times += 1
