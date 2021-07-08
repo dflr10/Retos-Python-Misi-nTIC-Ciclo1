@@ -22,13 +22,12 @@ def fourthChallenge(drinks, buys):
     buys = buys.split()
 
     for buy in buys:
-        for key in drinks.keys():
-            if buy == key:
-                output1 += drinks[key]
-                output2.append(buy)
+        if buy in drinks:
+            output1 += drinks[buy]
+            output2.append(buy)
 
     return(print(output1), '\n', print(" ".join(output2)))
 
 
-fourthChallenge(input(),
-                input())
+fourthChallenge(input("Ingrese los licores disponibles: "),
+                input("Ingrese su compra: "))
